@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Streaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Anime Streaming</h1>
+    </header>
+
+    <section class="anime-list">
+        <div class="anime-item" onclick="playVideo('assets/video.mp4')">
+            <img src="assets/anime1.jpg" alt="Anime 1">
+            <h2>Anime 1</h2>
+        </div>
+        <div class="anime-item" onclick="playVideo('assets/video.mp4')">
+            <img src="assets/anime2.jpg" alt="Anime 2">
+            <h2>Anime 2</h2>
+        </div>
+    </section>
+
+    <section id="video-player" class="hidden">
+        <video controls id="video">
+            <source src="" type="video/mp4">
+            Browser Anda tidak mendukung video tag.
+        </video>
+        <button onclick="closeVideo()">Tutup</button>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
